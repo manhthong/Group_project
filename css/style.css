@@ -1,1 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Reem+Kufi+Fun:wght@400;600&family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
+:root {
+    --white: ##FFFFFF;
+    --beige: #F8F6F4;
+    --light-grey: #D3D3D3;
+    --dark-grey: #808080;
+    --light-blue: #ADD8E6;
+    --dark-blue: #191970;
+    --black: #000000;
+    --dark-green: #00AA00;
+    --dark-red: #AA0000;
+    --dark-purple: #AA00AA;
+    --dark-orange: #FFAA00;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+}
