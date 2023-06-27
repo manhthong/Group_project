@@ -60,3 +60,96 @@
         $(this).remove();
     });
 
+    //adding js owl carousel minhkhoinguyen
+    $('.clients').owlCarousel({
+        navigation: false,
+        pagination: false,
+        dots: false,
+        loop: true,
+//        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        margin: 10,
+        autoHeight: !1,
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 4
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
+    $('.counter-block-value').each(function () {
+        var $this = $(this),
+                countTo = $this.attr('data-count');
+        $({countNum: $this.text()}).animate({
+            countNum: countTo
+        },
+                {
+                    duration: 8000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+                });
+    });
+
+    $('.testimonials').owlCarousel({
+        navigation: false,
+        pagination: false,
+        autoPlay: true,
+        items: 2,
+        loop: !1,
+        dots: true,
+        margin: 25,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            1200: {
+                items: 2
+            }
+        }
+    });
+
+     $(function () {
+        var selectedClass = "";
+        $(".filter-tabs").find('button:first-child').addClass('active-filter');
+        $(".fil-cat").click(function () {
+            $(".filter-tabs").find('button').removeClass('active-filter');
+            $(this).addClass('active-filter');
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio-page").fadeTo(100, 0.1);
+            $("#portfolio-page .portfolio-item").not("." + selectedClass).fadeOut().removeClass('portfolio-item');
+            setTimeout(function () {
+                $("." + selectedClass).fadeIn().addClass('portfolio-item');
+                $("#portfolio-page").fadeTo(300, 1);
+            }, 300);
+
+        });
+    });
+
+    $('[data-rel^=lightcase]').lightcase({
+        maxWidth: 1100,
+        maxHeight: 800
+    });
+
+    new WOW().init();
+
+    $('#app_date').dateDropper();
+    $('#app_time').timeDropper();
+
+ 
