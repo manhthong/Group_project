@@ -17,7 +17,7 @@
     <meta property="og:site_name" content="" />
     <meta property="og:image" content="" />
     <link rel="shortcut icon" href="" type="image/x-icon" />
-    <title>Portfolio Project - Group 2</title>
+    <title>Project - Group 2</title>
     <!-- CSS Load -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
@@ -37,6 +37,8 @@
             <span></span>
         </div>
     </div>
+    <!-- /preloader -->
+
     <div class="wrapper-page">
         <!-- Header -->
         <header class="header">
@@ -60,18 +62,19 @@
                 <div class="site-nav">
                     <ul class="header-main-menu" id="header-main-menu">
                         <li><a class="active" href="#home"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a href="#about-me"><i class="fas fa-user-tie"></i>About</a></li>
+                        <li><a href="#about-me"><i class="fas fa-user-tie"></i>About Me</a></li>
                         <li><a href="#resume"><i class="fas fa-award"></i>Resume</a></li>
                         <li><a href="#portfolio"><i class="fas fa-business-time"></i>Portfolio</a></li>
                         <li><a href="#blog"><i class="fas fa-book-reader"></i>Blog</a></li>
-                        <li><a href="#contact"><i class="fas fa-paper-plane"></i>Contact</a></li>
-                        <li><a href="#ticket"><i class="fas fa-calendar-check"></i>Ticket </a></li>
+                        <li><a href="#contact"><i class="fas fa-paper-plane"></i>Contact Me</a></li>
+                        <li><a href="#appointment"><i class="fas fa-calendar-check"></i>Ticket </a></li>
                     </ul>
 
                 </div>
 
             </div>
         </header>
+        <!-- end of Header -->
         <div class="responsive-header">
             <div class="responsive-header-name">
                 <img class="responsive-logo" src="image/avatar.jpeg" alt="" />
@@ -619,6 +622,133 @@
                     </div>
                 </div>
             </section>
+            <!-- end of About Me Subpage -->
+            
+            <!-- Contact Subpage -->
+            <section id="contact" class="sub-page">
+                <div class="sub-page-inner">
+                    <div class="section-title">
+                        <div class="main-title">
+                            <div class="title-main-page">
+                                <h4>Contact</h4>
+                                <p>Need Some Help?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="row contact-form pb-30">
+                        <div class="col-sm-12 col-md-5 col-lg-5 left-background">
+                            <img src="/images/mailbox.png" alt="mail box" />
+                        </div>
+                        <div class="col-sm-12 col-md-7 col-lg-7">
+                            <div class="form-contact-me">
+                                <div id="show_contact_msg" class="row">
+                                </div>
+                                <form method="post" id="contact-form" action="#contact">
+                                    <input name="name" type="text" placeholder="Name:" required autocomplete="off">
+                                    <input name="email" type="email" placeholder="Email:" required autocomplete="off">
+                                    <textarea name="message" placeholder="Message:" required rows="6"></textarea>
+
+                                    <input class="bt-submit" type="submit" value="Send Message">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Contact Form -->
+
+                    <!-- Contact Details -->
+                    <div class="pt-50 pb-30">
+                        <div class="section-head">
+                            <h4>
+                                <span>Contact Information</span> Find me here </h4>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="sidebar-textbox row pb-50">
+                            <div class="contact-info d-flex col-md-4">
+                                <div class="w-25">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="contact-text w-75">
+                                    <h2>Phone</h2>
+                                    <p>(+84) 024 7773 1666
+                                    </p>
+                                    <p>(+84) 024 7771 7888</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info d-flex col-md-4">
+                                <div class="w-25">
+                                    <div class="contact-icon">
+                                        <i class="far fa-envelope-open"></i>
+                                    </div>
+                                </div>
+                                <div class="contact-text w-75">
+                                    <h2>Email</h2>
+                                    <p>group2_c4e@mindx.com
+                                    </p>
+                                    <p>mindxforbusiness@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info d-flex col-md-4">
+                                <div class="w-25">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="contact-text w-75">
+                                    <h2>Address</h2>
+                                    <p>
+                                        Tầng 6, Tòa nhà Chigamex 22C Thành Công, Phường Thành Công
+                                        <br>Quận Ba Đình, Hà Nội<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /Contact info -->
+                        <div class="contact-map pt-50">
+                            <!-- GOOGLE MAP -->
+                            <div id="google-map"></div>
+                        </div>
+                       
+                           
+                        <!-- Social Media -->
+                        <div class="pt-50">
+                            <div class="social-media-block">
+                                <h4>Follow Me On: </h4>
+                                <ul class="social-media-links">
+                                    <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-snapchat-ghost"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-vimeo-v"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-pinterest-p"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-codepen"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-dropbox"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-flickr"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-reddit"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fas fa-rss"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-skype"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-tumblr"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-yelp"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Social Media -->
+                    </div>
+                    <!-- /Contact Details -->
+                </div>
+            </section>
+            <!-- End Contact Subpage -->
         </div>
     </div>
     <!--JS Files-->
