@@ -2265,7 +2265,7 @@ span.typed {
 }
 
 .blog-grid-flex .article-img img {
-    height: auto;
+    height: 360%;
     margin-bottom: 0;
     width: 100%;
     transform: scale(1);
