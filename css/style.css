@@ -3787,3 +3787,6 @@ blockquote {
         padding-left: 0;
     }
 }
+.contact-form {
+    position: relative;
+}
