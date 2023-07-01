@@ -2593,9 +2593,7 @@ textarea{
     -o-box-shadow: 0 12px 17px rgba(0,0,0,.12);
     box-shadow: 0 12px 17px rgba(0,0,0,.12);
 }
-#google-map{
-    height: 350px;
-}
+
 /*12.3 Social Media*/
 
 .social-media-block {
@@ -2603,6 +2601,7 @@ textarea{
     padding: 30px 20px;
     position: relative;
 }
+
 .social-media-block::before, .social-media-block::after {
     border-style: solid;
     border-width: 2px;
@@ -2631,6 +2630,7 @@ textarea{
 .social-media-links li, .social-media-links a{
     display: inline-block;
     margin-bottom: 5px;
+    justify-content: space-around;
 }
 .social-media-block a{
     font-size: 16px;
