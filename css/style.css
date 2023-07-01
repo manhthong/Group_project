@@ -3716,9 +3716,7 @@ blockquote {
 /* ============================================================================= 
 #16. Appointments
 ============================================================================= */
-#appointment.sub-page{
-    display: block !important;
-}
+
 .section-head.third-head h4 {
     font-size: 15px;
     line-height: 18px;
